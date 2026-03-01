@@ -6,7 +6,7 @@ class Config(object):
     TEMPLATE_FOLDER = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'templates')
     ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
     APP = None
-
+    SQLALCHEMY_DATABASE_URI = 'mysql+mysqldb://root:root@localhost:3306/estoque_flask'
 class DevelopmentConfig(Config):
     TESTING = True
     DEBUG = True
